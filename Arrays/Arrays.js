@@ -1,9 +1,17 @@
 let x;
 const fruits = ['apple','banana','orange'];
-const berries = ['strawberry','raspberry','blueberry'];
+const berries = ['strawberry', 'raspberry', 'blueberry'];
 
-fruits.push(berries);
+//fruits.push(berries.toString());
 
-x = fruits;
 
-console.log(fruits);
+//x = `${fruits[0]} ${fruits[3]}`;
+x = [...berries,...fruits];
+x = x.toString();
+
+x = fruits.concat(berries);
+
+const arr = [1,2,[3,4],5,6];
+
+x = arr.flat();
+console.log(x);
