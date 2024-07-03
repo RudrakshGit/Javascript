@@ -9,6 +9,7 @@ const berries = ['strawberry', 'raspberry', 'blueberry'];
 x = [...berries,...fruits];
 //x = x.toString();
 x = x.includes('strawberry');
+
 //x = fruits.concat(berries);
 
 //const arr = [1,2,[3,4],5,6];
