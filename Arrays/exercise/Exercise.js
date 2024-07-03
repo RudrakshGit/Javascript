@@ -8,4 +8,6 @@ x = arr.reverse();
 
 x.push(0);
 
+x.toString();
+
 console.log(x);
