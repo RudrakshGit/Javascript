@@ -12,8 +12,9 @@ console.log(sub(10,5));
 const mul = a => a*2;
 console.log(mul(10));
 
-//Returning to objecct
+//Returning to object
 const object = () => ({
     name: 'Mukesh',
 });
 console.log(object(name));
+
