@@ -15,8 +15,9 @@ for (const user of users){
 }
 
 //Loop through strings
-const str = "Hello World!";
+const str = 'Hello World!';
 
 for (const letter of str){
     console.log(letter);
 }
+
