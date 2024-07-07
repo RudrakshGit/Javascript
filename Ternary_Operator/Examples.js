@@ -18,4 +18,4 @@ const canVote = age >= 18 ? true : false;
 console.log(canVote);
 
 //Multiple operations
-age >= 18 ? console.log('You can vote', true) : console.log('You cannot vote',false , 'invalid age');
+age >= 18 ? console.log('You can vote', true) : console.log('You cannot vote', false , 'invalid age');
