@@ -23,3 +23,16 @@ function insertHTML(){
 }
 
 insertHTML();
+
+//insertBefore Example
+function insertBeforeItem(){
+  const ul = document.querySelector('ul');
+  
+  const li = document.createElement('li');
+  li.textContent = 'insertBefore';
+
+  const thirdItem = document.querySelector('li:nth-child(3)');
+
+  ul.insertBefore(li,thirdItem);
+}
+insertBeforeItem();
