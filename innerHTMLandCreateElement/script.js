@@ -1,3 +1,4 @@
+//CREATING NEW ITEMS METHODS
 //Quick & Dirty (using innerHTML)
 function createListItem(item){
   const li = document.createElement('li');
