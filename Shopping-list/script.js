@@ -49,6 +49,7 @@ function onSubmit2(e) {
   const formData = new FormData(form);
   const item = formData.get('item');
   const priority = formData.get('priority');
-  console.log(item, priority);
+  const isImportant = formData.get('isImportant');
+  console.log(item, priority, isImportant);
 }
 form.addEventListener('submit', onSubmit2);
