@@ -34,11 +34,11 @@ function onSubmit(e) {
   //console.log('Form submitted');
   const item = itemInput.value;
   const priority = priorityInput.value;
-  const isImportant = checkbox.checked;
-  if (item === '' || priority === '0') {
+  if (item === '' || priority === '') {
     alert('Please enter valid item and priority');
-    return;
   }
+
+  const isImportant = checkbox.checked;
   console.log(item, priority, isImportant);
 }
 //form.addEventListener('submit', onSubmit);
@@ -48,8 +48,11 @@ function onSubmit2(e) {
   e.preventDefault();
   const formData = new FormData(form);
   const item = formData.get('item');
+  if (item === '' || priority === '') {
+    alert('Please enter valid item and priority');
+  }
   const priority = formData.get('priority');
   const isImportant = formData.get('isImportant');
-  console.log(item, priority, isImportant);
+  console.log(item, priority);
 }
 form.addEventListener('submit', onSubmit2);
