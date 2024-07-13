@@ -47,12 +47,16 @@ function onSubmit(e) {
 function onSubmit2(e) {
   e.preventDefault();
   const formData = new FormData(form);
-  const item = formData.get('item');
-  if (item === '' || priority === '') {
-    alert('Please enter valid item and priority');
+  //const item = formData.get('item');
+  // if (item === '' || priority === '') {
+  //   alert('Please enter valid item and priority');
+  // }
+  //const priority = formData.get('priority');
+  //const isImportant = formData.get('isImportant');
+  //console.log(item, priority);
+  const entries = formData.entries();
+  for (let entry of entries) {
+    console.log(entry[1]);
   }
-  const priority = formData.get('priority');
-  const isImportant = formData.get('isImportant');
-  console.log(item, priority);
 }
 form.addEventListener('submit', onSubmit2);
