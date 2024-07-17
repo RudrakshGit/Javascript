@@ -1,39 +1,109 @@
+body {
+  background: url('https://gifdb.com/images/high/anime-bamboo-forest-background-5rx5lwev45pcnpaf.webp')
+    no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: -190px center; /* Adjust this value to move the image left or right */
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+  color: #eeeeee;
+}
+
 .container {
   width: 70%;
   margin: auto;
   text-align: center;
 }
 
-.dice {
-  text-align: center;
-  display: inline-block;
+.dice-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-body {
-  background-color: #393e46;
+.dice {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.scoreboard {
+  margin-bottom: 20px;
+}
+
+.scoreboard p {
+  font-size: 2rem;
+  color: #4ecca3;
+  font-weight: 900;
 }
 
 h1 {
   margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
+  font-size: 4rem;
   color: #4ecca3;
 }
 
 p {
   font-size: 2rem;
   color: #4ecca3;
-  font-family: 'Indie Flower', cursive;
+}
+.vs-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.vs-image img {
+  width: 50px; /* Adjust width as needed */
+  height: auto;
 }
 
 img {
   width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.button-container {
+  margin-top: 20px;
 }
 
 footer {
   margin-top: 5%;
-  color: #eeeeee;
+  color: #ffffff;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+}
+
+#initialStartButton,
+#startButton,
+#restartButton {
+  background-color: #4ecca3;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#initialStartButton:hover,
+#startButton:hover,
+#restartButton:hover {
+  background-color: #3e9e77;
+}
+
+.flag {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.flag-left {
+  left: 10px;
+}
+
+.flag-right {
+  right: 10px;
 }
